@@ -5,4 +5,4 @@ A mini project made as a proof of concept; it is comprised of:
   * CSS
   * JS (Pure JS and Node.js)
 
-Note that it is made to understand the concepts, and is not a fully fledged project.
+**Note that it is made to understand the concepts, and is not a fully fledged project.**
