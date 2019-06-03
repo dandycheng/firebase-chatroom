@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class='w-100 h-100'>
+	<head>
+		<title>Sign Up</title>
+		<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'></script>
+		<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+		<link rel='stylesheet' href='sign_up.css'>
+        <meta name='viewport' content='width=device-width,initial-scale=1.0'>
+	</head>	
+	<body class='w-100 h-100'>
+		<!-- Back to login link -->
+		<div id='sign-up-wrapper' class='h-100 d-flex justify-content-center align-items-center'>
+			<a href='login.html' class='position-absolute d-inline-block align-self-start justify-self-start m-4 text-dark'>
+				<img src='assets/svg/arrow_back.svg' draggable='false'>
+				<span class='align-middle'>Back to log in</span>
+			</a>
+			<form class='w-75 d-flex flex-column'>
+				<div class='form-group'>
+					<label class='w-100'>Username</label>
+					<input type='text' class='w-100 validation'>
+				</div>
+				<div class='form-group'>
+					<label class='w-100'>Email address</label>
+					<input type='email' class='w-100 validation'>
+				</div>
+				<div class='form-group'>
+					<label class='w-100'>Password</label>
+					<input type='password' class='w-100 validation'>
+				</div>
+				<div class='form-group'>
+					<label class='w-100'>Confirm password</label>
+					<input type='password' class='w-100 validation'>
+				</div>
+				<div class='form-group d-flex flex-column justify-content-end'>
+					<label id="error-msg" class='text-warning text-center invisible'>Fields cannot be empty!</label>
+					<button class='btn btn-primary rounded'>Sign up</button>
+				</div>
+			</form>
+		</div>
+		<script src='sign_up.js'></script>	
+	</body>
+</html>

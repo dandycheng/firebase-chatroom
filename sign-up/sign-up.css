@@ -1,0 +1,39 @@
+*{
+    background-repeat:no-repeat;
+}
+html,body{
+	width:100%;
+	height:100%;
+}
+body{
+	background-image:url(../assets/img/sign_up_side_img.jpg);
+    background-size:cover;
+}
+a:hover{
+	text-decoration:none !important;
+}
+input{
+	background-color:transparent;
+	border:none;
+	border-bottom:2px solid #000;
+	outline:none;
+	transition:border .3s linear;
+}
+input:focus{
+	border-bottom-color:#00f;
+}
+a[href*='login']{
+	top:0;
+	left:0;
+}
+#sign-up-wrapper{
+	width:40% !important;
+	background-color:rgba(255,255,255,0.8);
+	transform:translateX(-100%);
+	transition:transform .7s ease;
+}
+@media screen and (max-width:720px){
+	#sign-up-wrapper{
+		width:80% !important;
+	}
+}

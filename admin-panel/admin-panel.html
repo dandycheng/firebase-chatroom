@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class='w-100 h-100'>
+	<head>
+		<title>Dashboard</title>
+		<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'></script>
+		<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+		<link rel='stylesheet' href='admin-panel.css'>
+        <meta name='viewport' content='width=device-width,initial-scale=1.0'>
+	</head>
+	<body class='w-100 h-100'>
+		<header class='position-absolute container-fluid d-flex flex-row flex-nowrap justify-content-between bg-dark p-2 px-4'>
+			<h2 class='text-white font-weight-light align-middle d-inline'>Admin Panel</h2>
+			<button id='logOutBtn' alt='Logout' title='Log out'></button>
+		</header>
+		<main class='container-fluid h-100 bg-light px-5'>
+			<!-- Dashboard menu -->
+			<div id='dashboard-menu' class='d-flex flex-wrap'>
+				<button id='export-chat' class='dashboard-item  btn btn-light text-dark rounded shadow-sm p-3 pl-5 m-3'>Export chat</button>
+				<!-- <button id='join-room' class='dashboard-item  btn btn-light text-dark rounded shadow-sm p-3 pl-5 m-3'>Join room</button> -->
+			</div>
+			<!-- Create room modal popup -->
+            <div id='overlay-modal-wrapper' class='position-absolute d-none w-100 h-100'>
+                <div id='overlay' class='w-100 h-100 position-absolute'></div>
+                <div id='modal' class='position-absolute p-5 bg-white text-center shadow-sm shadow-dark'></div>
+            </div>
+		</main>
+		<!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+ 
+		 <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+		 <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyDeiInbWqaWjoY37TQbChxBgEdG7-kjVu8",
+                authDomain: "chat-room-d1e5c.firebaseapp.com",
+                databaseURL: "https://chat-room-d1e5c.firebaseio.com",
+                projectId: "chat-room-d1e5c",
+                storageBucket: "chat-room-d1e5c.appspot.com",
+                messagingSenderId: "1057383795011",
+                appId: "1:1057383795011:web:6c42e0c0b4dc105b"
+            }
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig)
+        </script>
+		<script src='admin-panel.js'></script>
+	</body>
+</html>

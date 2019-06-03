@@ -1,0 +1,10 @@
+*{
+	background-repeat:no-repeat;
+}
+.icon-wrapper{
+	width:100px;
+	height:100px;
+	background-image:url(assets/svg/person.svg);
+	background-position:center;
+	background-size:50% auto;
+}
